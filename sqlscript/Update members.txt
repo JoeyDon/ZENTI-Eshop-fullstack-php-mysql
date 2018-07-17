@@ -1,0 +1,15 @@
+UPDATE members
+Set password = ''
+where username = '';
+
+$query  = "UPDATE members
+												SET firstname = '${firstname}',
+												lastname = '${lastname}',
+												address = '${address}',
+												company = '${company}',
+												city = '${city}',
+												postcode = '${postcode}',
+												state = '${state}',
+												country = '${country}',
+												telephone = '${telephone}',
+												where username = '${name}'";

@@ -1,0 +1,39 @@
+DROP TABLE products;
+
+CREATE TABLE products (
+id INT NOT NULL,
+title VARCHAR(100) NOT NULL ,
+img VARCHAR(100) NOT NULL ,
+price DECIMAL(10,2) NOT NULL ,
+PRIMARY KEY (id)
+) ;
+
+INSERT INTO products VALUES (1, 'Armani Jeans Crew Neck Gradient T Shirt White','img/tshirt1.jpg','70.00');
+INSERT INTO products VALUES (2, 'Armani Jeans Logo Crew Neck T Shirt Blue','img/tshirt2.jpg','50.00');
+INSERT INTO products VALUES (3, 'Versace Jeans Logo T Shirt Blue','img/tshirt3.jpg', '150.00');
+INSERT INTO products VALUES (4, 'Versace Jeans Printed T Shirt Green','img/tshirt4.jpg','100.00');
+INSERT INTO products VALUES (5, 'Columbian-fit Hawaii print T-shirt','img/tshirt5.jpg','1000.00');
+INSERT INTO products VALUES (6, 'Armani Collezioni Long Sleeved Check Shirt Navy','img/shirt1.jpg', '200.00');
+INSERT INTO products VALUES (7, 'Versace Collezioni Long Sleeved Check Shirt Navy','img/shirt2.jpg','200.00');
+INSERT INTO products VALUES (8, 'Versace Jeans Long Sleeved Shirt Black','img/shirt2.jpg','200.00');
+INSERT INTO products VALUES (9, 'Jack Honey Newbill Comfort Fit Jeans Blue','img/pant1.jpg', '170.00');
+INSERT INTO products VALUES (10, 'Carlo Bruni Waitom Regular Slim Fit Jeans Blue','img/pant2.jpg','170.00');
+INSERT INTO products VALUES (11, 'Carlo Bruni Waitom Regular Slim Fit Jeans Black','img/pant2.jpg','170.00');
+INSERT INTO products VALUES (12, 'Armani Jeans Small Shoulder Bag Blue','img/acc1.jpg', '125.00');
+INSERT INTO products VALUES (13, 'Armani Exchange Reversible Belt Black','img/acc2.jpg','100.00');
+INSERT INTO products VALUES (14, 'Versace Jeans Reversible Leather Belt Black','img/acc3.jpg','70.00');
+INSERT INTO products VALUES (15, 'A|X WINGS LOGO TEE','img/wtshirt1.jpg', '50.00');
+INSERT INTO products VALUES (16, 'SEQUIN LOGO CREWNECK TEE','img/wtshirt2.jpg','50.00');
+INSERT INTO products VALUES (17, 'Versace Embroidered T-shirt','img/wtshirt3.jpg','415.00');
+INSERT INTO products VALUES (18, 'Armani Blue stretch shirt','img/wshirt1.jpg', '115.00');
+INSERT INTO products VALUES (19, 'Armani Chambray Shirt','img/wshirt2.jpg','115.00');
+INSERT INTO products VALUES (20, 'Versace Printed silk-twill shirt','img/wshirt3.jpg','1350.00');
+INSERT INTO products VALUES (21, 'Versace Baroccoflage shirt','img/wshirt4.jpg', '1450.00');
+INSERT INTO products VALUES (22, 'Versace printed shirt','img/wshirt5.jpg','650.00');
+INSERT INTO products VALUES (23, 'Carlo Bruni Cream High Waisted Wide Leg pants','img/wpant1.jpg', '65.00');
+INSERT INTO products VALUES (24, 'Jack Honey loose fit cropped pants','img/wpant2.jpg','115.00');
+INSERT INTO products VALUES (25, 'Jack Honey striped flared trousers','img/wpant3.jpg', '515.00');
+INSERT INTO products VALUES (26, 'Versace Medusa belt','img/wacc1.jpg','666.00');
+INSERT INTO products VALUES (27, 'Armani Borsa Bag','img/wacc2.jpg', '666.00');
+INSERT INTO products VALUES (28, 'Carlo Bruni clutch','img/wacc3.jpg', '1666.00');
+commit;

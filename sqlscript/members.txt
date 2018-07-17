@@ -1,0 +1,31 @@
+DROP TABLE members;
+
+CREATE TABLE members (
+  id int NOT NULL AUTO_INCREMENT,
+  username varchar(65) DEFAULT '' NOT NULL,
+  password varchar(65) DEFAULT '' NOT NULL,
+  email varchar(65) NOT NULL,
+  firstname varchar(65),
+  lastname varchar(65),
+  address varchar(65),
+  company varchar(65),
+  city varchar(65),
+  postcode varchar(65),
+  state varchar(65),
+  country varchar(65),
+  telephone varchar(65),
+  PRIMARY KEY (id),
+  CONSTRAINT id_unique UNIQUE (id , username,email)
+) ;
+
+call CreateSequence('user_id_seq', 1, 1);
+
+create trigger trg_user_id
+before insert on members
+for each row
+begin
+select user_id_seq.nextval
+into :new.id
+from dual;
+end;
+/

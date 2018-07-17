@@ -1,0 +1,14 @@
+Assignment 2:
+Register
+
+User can register on the website: PHP + Oracle, 1.check duplicate data in table, 2. insert 
+
+User can login on the website: PHP + Oracle, 1.fetch and match, 2.add status to cookie
+	
+Registered name displayed once registered: Generate Cookie when logged in, use JQuery validate, if so, change content
+
+Shipping address automatically filled if a registered user makes an order.
+	
+Auto-filled shipping address is editable.
+	
+

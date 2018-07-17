@@ -1,0 +1,33 @@
+DROP TABLE orders;
+
+
+CREATE TABLE orders (
+  orderid char(23) NOT NULL,
+  cart varchar(200),
+  dateb varchar(20),
+  total varchar(65),
+  username varchar(65) DEFAULT '' NOT NULL,
+  firstname varchar(65),
+  lastname varchar(65),
+  address varchar(65),
+  company varchar(65),
+  city varchar(65),
+  postcode varchar(65),
+  state varchar(65),
+  country varchar(65),
+  telephone varchar(65),
+  PRIMARY KEY (orderid),
+  CONSTRAINT orderid_unique UNIQUE (orderid,username)
+) ;
+create sequence order_id_seq;
+
+create trigger trg_order_id
+before insert on orders
+for each row
+begin
+select order_id_seq.nextval
+into :new.orderid
+from dual;
+end;
+/
+
